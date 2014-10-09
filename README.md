@@ -1,5 +1,6 @@
 angular adminlte
 ========================
+initially forked from [AdminLTE](https://github.com/almasaeed2010/AdminLTE).
 
 ## Prerequisites
 1. nodejs
