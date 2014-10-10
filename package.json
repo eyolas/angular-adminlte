@@ -16,6 +16,15 @@
   "homepage": "https://github.com/eyolas/angular-adminlte",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "grunt-contrib-less": "^0.11.4"
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-connect-proxy": "^0.1.11",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-copy": "^0.6.0",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^1.0.0"
   }
 }
