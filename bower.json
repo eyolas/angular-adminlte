@@ -28,6 +28,7 @@
         "angular-sanitize": "~1.2.26",
         "angular-ui-router": "~0.2.11",
         "es5-shim": "~4.0.3",
-        "ionicons": ">=1.4.0"
+        "ionicons": ">=1.4.0",
+        "jquery-resize": "cowboy/jquery-resize#v1.1"
     }
 }
