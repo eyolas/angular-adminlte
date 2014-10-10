@@ -10,11 +10,12 @@ angular.module('adminlte.home', [])
         .state('app.home', {
             url: '/app',
             views: {
-              '@': {
-                templateUrl: 'views/home.html'
-              }
+                '@app': {
+                    templateUrl: 'views/home.html',
+                    controller: 'homeCtrl'
+                }
             }
-            
+
         });
 
 }]);
