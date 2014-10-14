@@ -1,0 +1,23 @@
+{
+    "sidebar": [{
+        "class": "fa fa-dashboard",
+        "state": "app.home",
+        "text": "Dashboard"
+    }, {
+        "class": "fa fa-bar-chart-o",
+        "text": "Charts",
+        "children": [{
+            "class": "fa fa-dashboard",
+            "state": "app.home",
+            "text": "Morris"
+        }]
+    }, {
+        "class": "fa fa-envelope",
+        "state": "app.home",
+        "text": "Mailbox",
+        "badge": {
+            "color": "yellow",
+            "text": 12
+        }
+    }]
+}

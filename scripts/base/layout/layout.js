@@ -20,7 +20,8 @@ angular.module('adminlte.base.layout', [])
                     templateUrl: "views/layout/header.html"
                 },
                 "sidebar@app": {
-                    templateUrl: "views/layout/sidebar.html"
+                    templateUrl: "views/layout/sidebar.html",
+                    controller: 'sidebarCtrl'
                 }
             }
         });
