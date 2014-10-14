@@ -10,7 +10,6 @@ angular.module('adminlte.base.layout', [])
 .config(['$stateProvider', function($stateProvider) {
     $stateProvider
         .state('app', {
-            url: '',
             abdtract:true,
             views: {
                 "@": {
