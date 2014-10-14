@@ -7,6 +7,10 @@ module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        src: {
+            js: ['scripts/**/*.js', ]
+        },
+
         clean: {
             server: '.tmp'
         },
@@ -15,9 +19,9 @@ module.exports = function(grunt) {
                 files: ['less/{,*/}*.less'],
                 tasks: ['less:development', 'autoprefixer']
             },
-            styles: {
-                files: ['src/main/websrc/styles/{,*/}*.css'],
-                tasks: ['copy:styles', 'autoprefixer']
+            jshint: {
+                files: ["<%= src.js %>"],
+                tasks: ['jshint']
             },
             livereload: {
                 options: {
@@ -70,26 +74,28 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '.tmp/styles/',
+                    cwd: '.tmp/css/',
                     src: '{,*/}*.css',
-                    dest: '.tmp/styles/'
+                    dest: '.tmp/css/'
                 }]
-            }
-        },
-        copy: {
-            styles: {
-                expand: true,
-                cwd: 'src/main/websrc/styles',
-                dest: '.tmp/styles/',
-                src: '{,*/}*.css'
             }
         },
         concurrent: {
             server: [
-                'less:development',
-                'copy:styles'
+                'jshint',
+                'less:development'
             ]
         },
+        // Configure Lint\JSHint Task
+        jshint: {
+            options: {
+                jshintrc: '.jshintrc'
+            },
+            files: {
+                src: ['Gruntfile.js', '<%= src.js %>']
+            }
+        }
+
     });
 
     // Load the plugin that provides the "less" task.
