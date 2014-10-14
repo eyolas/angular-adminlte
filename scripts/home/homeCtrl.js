@@ -1,3 +1,5 @@
+'use strict';
+
 function homeCtrl($scope) {
     console.log("home pages");
     $scope.$parent.title = "Blank page";

@@ -8,11 +8,10 @@ angular.module('adminlte', ['ui.router', 'adminlte.base', "adminlte.home"])
 
 }])
 
-// .run(['$rootScope', '$window', function($rootScope, $window) {
-//     $rootScope.$on('$stateChangeSuccess',
-//         function(event, toState, toParams, fromState, fromParams) {
-
-//             //todo delete all file in js folder (sucks hard)
-//             $window.themeLoads();
-//         });
-// }]);
+.run(['$rootScope', '$window', function($rootScope, $window) {
+    $rootScope.$on('$stateChangeSuccess',
+        function(event, toState, toParams, fromState, fromParams) {
+            //todo delete all file in js folder (sucks hard)
+            $window.themeLoads();
+        });
+}]);
