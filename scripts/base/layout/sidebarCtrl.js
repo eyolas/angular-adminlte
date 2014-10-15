@@ -2,7 +2,7 @@
 
 (function() {
 
-    function SidebarCtrl($scope, sidebarService) {
+    function sidebarCtrl($scope, sidebarService) {
         sidebarService.getSidebar()
             .success(function(data, status, headers, config) {
                 data = data || {};
@@ -11,8 +11,10 @@
 
     }
 
+    sidebarCtrl.$inject = ['$scope', 'sidebarService'];
+
 
     angular.module('adminlte.base.layout')
-        .controller('sidebarCtrl', ['$scope', 'sidebarService', SidebarCtrl]);
+        .controller('sidebarCtrl', sidebarCtrl);
 
 })();

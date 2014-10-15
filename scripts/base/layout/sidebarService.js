@@ -1,11 +1,26 @@
 'use strict';
 
-angular.module('adminlte.base.layout')
+(function() {
 
-    .service('sidebarService', ['$http', function($http) {
+    function sidebarService($http) {
+        function getSidebar() {
+            return $http.get('data/sidebar.json');
+        }
+
+
         return {
-            getSidebar: function() {
-                return $http.get('data/sidebar.json');
-            }
+            getSidebar: getSidebar
         };
-    }]);
+
+        
+    }
+
+    sidebarService.$inject = ['$http'];
+
+
+    angular.module('adminlte.base.layout')
+
+    .service('sidebarService', sidebarService);
+
+
+})();

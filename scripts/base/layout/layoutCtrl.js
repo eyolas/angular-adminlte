@@ -7,6 +7,8 @@
 
     }
 
+    layoutCtrl.$inject = ['$scope'];
+
 
 
     angular.module('adminlte.base.layout')

@@ -16,8 +16,8 @@
         "state": "app.home",
         "text": "Mailbox",
         "badge": {
-            "color": "yellow",
-            "text": 12
+            "color": "green",
+            "text": "new"
         }
     }]
 }
