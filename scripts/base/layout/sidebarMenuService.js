@@ -2,7 +2,7 @@
 
 (function() {
 
-    function sidebarService($http) {
+    function sidebarMenuService($http) {
         function getSidebar() {
             return $http.get('data/sidebar.json');
         }
@@ -15,12 +15,12 @@
         
     }
 
-    sidebarService.$inject = ['$http'];
+    sidebarMenuService.$inject = ['$http'];
 
 
     angular.module('adminlte.base.layout')
 
-    .service('sidebarService', sidebarService);
+    .service('sidebarMenuService', sidebarMenuService);
 
 
 })();

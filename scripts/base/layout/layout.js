@@ -16,7 +16,7 @@
                     },
                     "sidebar@app": {
                         templateUrl: "views/layout/sidebar.html",
-                        controller: 'sidebarCtrl'
+                        controller: 'sidebarMenuCtrl'
                     }
                 }
             });
