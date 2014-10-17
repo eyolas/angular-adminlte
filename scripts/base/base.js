@@ -5,4 +5,4 @@
 *
 * Description
 */
-angular.module('adminlte.base', ["adminlte.base.layout"]);
+angular.module('adminlte.base', ['adminlte.base.layout']);

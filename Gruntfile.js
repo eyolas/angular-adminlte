@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                 tasks: ['less:development', 'autoprefixer']
             },
             jshint: {
-                files: ["<%= src.js %>"],
+                files: ['<%= src.js %>'],
                 tasks: ['jshint']
             },
             livereload: {
@@ -38,10 +38,10 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["less"]
+                    paths: ['less']
                 },
                 files: {
-                    ".tmp/css/AdminLTE.css": "less/AdminLTE.less"
+                    '.tmp/css/AdminLTE.css': 'less/AdminLTE.less'
                 }
             }
         },

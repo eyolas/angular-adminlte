@@ -2,8 +2,8 @@
 
 (function() {
     function layoutCtrl($scope) {
-        $scope.title = "default title";
-        $scope.subtitle = "default subtitle";
+        $scope.title = 'default title';
+        $scope.subtitle = 'default subtitle';
 
     }
 

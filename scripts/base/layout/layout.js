@@ -7,15 +7,15 @@
             .state('app', {
                 abdtract: true,
                 views: {
-                    "@": {
-                        templateUrl: "views/layout/layout.html",
+                    '@': {
+                        templateUrl: 'views/layout/layout.html',
                         controller: 'layoutCtrl'
                     },
-                    "header@app": {
-                        templateUrl: "views/layout/header.html"
+                    'header@app': {
+                        templateUrl: 'views/layout/header.html'
                     },
-                    "sidebar@app": {
-                        templateUrl: "views/layout/sidebar.html",
+                    'sidebar@app': {
+                        templateUrl: 'views/layout/sidebar.html',
                         controller: 'sidebarMenuCtrl'
                     }
                 }

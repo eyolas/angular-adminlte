@@ -3,8 +3,8 @@
 (function() {
 
     function homeCtrl($scope) {
-        $scope.$parent.title = "Blank page";
-        $scope.$parent.subtitle = "Blank page";
+        $scope.$parent.title = 'Blank page';
+        $scope.$parent.subtitle = 'Blank page';
     }
 
     homeCtrl.$inject = ['$scope'];
