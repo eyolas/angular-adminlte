@@ -1,0 +1,7 @@
+# editorconfig.org
+root = true
+
+[*.js]
+indent_style = space
+charset = utf-8
+indent_size = 2
